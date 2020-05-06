@@ -4,7 +4,3 @@ http:
     redirect:
       redirectScheme:
         scheme: https
-    auth:
-      basicAuth:
-        users:
-          - "admin:$$apr1$$6oTRFVx4$$K3GCcv0TDAMjD.ptGG.Li."
