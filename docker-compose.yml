@@ -10,7 +10,7 @@ services:
      - "443:443"   # HTTPS
      - "8080:8080" # Traefik Dashboard
     command: 
-     - --api=true
+     - --api.insecure=true
      - --api.dashboard=true
      - --log.level=DEBUG
      # Provider Configuration
