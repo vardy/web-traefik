@@ -1,6 +1,6 @@
 # HTTPS-redirect middleware
-#http:
-#  middlewares:
-#    redirect:
-#      redirectScheme:
-#        scheme: https
+http:
+  middlewares:
+    redirect:
+      redirectScheme:
+        scheme: https
