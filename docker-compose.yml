@@ -34,7 +34,7 @@ services:
     labels: # To expose dashboard
      - "traefik.enable=true"
      - "traefik.http.routers.api.service=api@internal"
-     - "traefik.frontend.auth.basic=admin:$$apr1$$6oTRFVx4$$K3GCcv0TDAMjD.ptGG.Li."
+     - "traefik.http.middlewares.auth.basicauth.users=admin:$$apr1$$6oTRFVx4$$K3GCcv0TDAMjD.ptGG.Li."
 volumes: 
   certs:
 
