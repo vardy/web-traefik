@@ -33,7 +33,9 @@ services:
      - web
     labels: # To expose dashboard
      - "traefik.enable=true"
+     - "traefik.http.routers.verify-web.rule=Host(`monitor.vardy.dev`)"
      - "traefik.http.routers.api.service=api@internal"
+     - "traefik.http.middlewares.authy.basicauth.users=admin:$$apr1$$6oTRFVx4$$K3GCcv0TDAMjD.ptGG.Li."
 
 volumes: 
   certs:
